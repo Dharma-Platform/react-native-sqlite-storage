@@ -565,7 +565,7 @@ public class SQLitePlugin extends ReactContextBaseJavaModule {
      *
      * @param dbname The name of the database.
      */
-    private SQLiteDatabase getDatabase(String dbname) {
+    public static SQLiteDatabase getDatabase(String dbname) {
         DBRunner r = dbrmap.get(dbname);
         return (r == null) ? null :  r.mydb;
     }
